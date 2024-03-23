@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" /> 
+    <title>Practica Busqueda binaria</title>
+    
+  </head>
+  <body>
+    <main class="container">
+      <div>
+      <img align="left" src="https://i.gifer.com/ExX.gif" alt="GIF" style="border-radius: 100px;" style="opacity: 1;"/>
+      <h1 align="rigth"><strong>Piensa en un numero que se encuentre entre el 1 y el 100</strong>  </h1>
+    </div>
+      <h2 align="rigth" id="numeroNuevo" style="margin-left: 30px;" style="color: black;"><strong>Para comenzar a adivinar tu numero debes dar clic en el boton</strong> 👇🏼</h2>
+      <button class="btn btn-outline-danger" id="botonInicio" onclick="empezar()"><strong>¡Comenzar! </strong></button>
+      <button align="left" onclick="elNumeroEsMenor()" style="visibility: hidden" id="botonNumMenor" class="btn btn-outline-success"><strong> No, mi numero es menor</strong> </button>
+     
+      <button id="botonAcertaste" onclick="acertaste()" style="visibility: hidden" class="btn btn-outline-danger"> <strong>Acertaste</strong></button>
+     
+      <button align="rigth" onclick="elNumeroEsMayor()" style="visibility: hidden" id="botonNumMayor" class="btn btn-outline-success"><strong>No, mi numero es mayor</strong></button>
+      
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./busquedaBinaria.js"></script>
+  </body>
+</html>
